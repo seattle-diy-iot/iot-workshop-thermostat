@@ -1,0 +1,16 @@
+{
+  "name": "iot-workshop-thermostat",
+  "version": "0.0.1",
+  "description": "Thermostat Example using Http & Web-services",
+  "main": "./iot-workshop-thermostat/index.html",
+  "scripts": {
+    "minify:js": "terser ./src/index.js --compress --mangle --quote-style 1 -o ./src/index.min.js",
+    "minify:html": "html-minifier index.html --collapse-whitespace --remove-comments --remove-tag-whitespace --remove-optional-tags --minify-css true --minify-js true --max-line-length 40 -o index.min.html"
+  },
+  "devDependencies": {
+    "html-minifier-terser": "^5.0.2",
+    "terser": "^4.4.0"
+  },
+  "author": "mpace",
+  "license": "MIT"
+}
